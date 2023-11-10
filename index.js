@@ -1,4 +1,4 @@
-function mergeSort(arr) {
+export default function mergeSort(arr) {
   const len = arr.length;
   if (len < 2) {
     return arr;
@@ -18,7 +18,4 @@ function mergeSort(arr) {
     }
   }
   return lArr.length > 0 ? [...mArr, ...lArr] : [...mArr, ...rArr];
-
 }
-
-console.log(mergeSort([2, 1, 5, 3, 0]));
